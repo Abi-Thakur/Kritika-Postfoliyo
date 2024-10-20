@@ -1,0 +1,345 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  height: 110vh;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 0px 0px 150px 150px;
+}
+
+nav{
+  height: 25%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+.email{
+  width: 33%;
+  height: 35%;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: rgba(211, 211, 211, 0.253) 3px solid;
+  border-radius: 28px;
+}
+
+section button{
+  color: black;
+  padding: 15px 30px;
+  border-radius: 25px;
+  border: none;
+  margin-left: 5px;
+  font-weight: bold;
+  background-color: white;
+}
+.socials span a{
+  text-decoration: none;
+  color: black;
+}
+.icon{
+  display: none;
+}
+header.container{
+  height: 70%;
+  width: 100%;
+}
+.profileImage{
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.profileImage img{
+  aspect-ratio: 1/1;
+  width: 140px;
+  border-radius: 50%;
+  outline: 5px solid white;
+
+}
+.des{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding: 5px;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  flex-direction: column;
+  
+}
+.des h1{
+  line-height:55px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.664)); 
+-webkit-text-fill-color: transparent; 
+-webkit-background-clip: text; 
+}
+.btn{
+  color: white;
+  background-color: black;
+  padding: 25px 45px;
+  border-radius: 35px;
+  border: none;
+  margin-top: 30px;
+  font-size: medium;
+}
+
+.profileImage::before{
+  content: "kritika Thakur 👋";
+  background-color: white;
+  padding: 15px 30px;
+  position: absolute;
+  top: 30%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  animation: myanimation 3s infinite ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+}
+@keyframes myanimation {
+  0% {
+    transform: translateY(5px) rotateZ(-10deg);
+  }
+  50% {
+    transform: translateY(-10px) rotateZ(-10deg);
+  }
+  100% {
+    transform: translateY(5px) rotateZ(-10deg);
+  }
+}
+
+main .container{
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.heading{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bolder;
+  font-family: sans-serif;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.664)); 
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+
+}
+.services{
+  width: 85%;
+  height: auto;
+  border-top: solid lightgray 1px;
+}
+.banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.banner h3{
+  background-color: black;
+  padding: 15px 40px;
+  border-radius: 25px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+  transform: translateY(-25px) rotateZ(-15deg);
+  
+}
+.contentlist{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.card{
+  border: solid 0.3px lightgray;
+  width: 270px;
+  height: 420px;
+  border-radius: 20px;
+  padding: 20px;
+  
+}
+.card img{
+  width: 40%;
+  margin-bottom: 20px;
+}
+.card h3{
+  font-size: 22px;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+.card span{
+  border: none;
+  background-color: lightgray;
+  padding: 5px;
+  border-radius: 20px;
+  font-weight: bolder;
+  
+}
+.card p{
+  margin-top: 20px;
+  font-size: medium;
+  font-style: oblique;
+  font-family: sans-serif;
+}
+.Postlist{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  border-radius: 150px 150px 0px 0px;
+}
+.instablock{
+  height: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+footer{
+  height: 100vh;
+}
+.footericon{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footericon img{
+  width: 100px;
+}
+.formbox{
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+form{
+  height: 370px;
+  width: 350px;
+  padding: 10px;
+  border: #f2f2f2 solid 0.5px;
+  margin-top: 30px;
+}
+
+label{
+  font-size: larger;
+  font-weight: bold;
+  display: block;
+
+  
+}
+input{
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  outline: solid gray 0.5px;
+  border-radius: 5px;
+
+}
+textarea{
+  height: 100px;
+  width: 100%;
+  border: none;
+  outline: solid gray 0.5px;
+  border-radius: 5px;
+
+}
+
+form button{
+  padding: 15px 32px;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  margin-top: 30px;
+}
+
+
+/* responsive design For mobile and teblet */
+@media only screen and (max-width: 600px){
+  body{
+    overflow-y: hidden;
+  }
+  header{
+    height: 80vh;
+    border-radius: 0px 0px 100px 100px;
+  }
+  nav{
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .icon{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
+  .icon span svg{
+    width: 30px;
+  }
+  .email{
+    width: 60%;
+  }
+  .email span{
+   display: none;
+  }
+  .socials{
+    display: none;
+  }
+  .des{
+    font-size: 20px;
+  }
+  .profileImage::before{
+    padding: 10px;
+    position: absolute;
+    top: 30%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+  }
+  .heading{
+    font-size: 18px;
+  }
+  footer{
+    height: 70vh;
+  }
+}
