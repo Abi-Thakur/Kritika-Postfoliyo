@@ -295,9 +295,6 @@ form button{
 
 /* responsive design For mobile and teblet */
 @media only screen and (max-width: 600px){
-  body{
-    overflow-x: hidden;
-  }
   header{
     height: 80vh;
     border-radius: 0px 0px 100px 100px;
